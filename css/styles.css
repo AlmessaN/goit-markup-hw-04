@@ -147,8 +147,6 @@ ul {
   background-position: center;
   text-align: center;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -339,8 +337,6 @@ ul {
   }
 .section:nth-child(4) {
     background-color: #F5F4FA;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 94px;
   }
 .button-use {
