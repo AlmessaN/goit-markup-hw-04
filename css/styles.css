@@ -147,6 +147,8 @@ ul {
   background-position: center;
   text-align: center;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -337,6 +339,8 @@ ul {
   }
 .section:nth-child(4) {
     background-color: #F5F4FA;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 94px;
   }
 .button-use {
@@ -456,6 +460,8 @@ ul {
     background: #2F303A;
     margin: 0 auto;
     padding: 60px 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .address {
     display: block;
