@@ -113,6 +113,9 @@ ul {
 .navigation > li >a:hover {
   color:#2196F3
 }
+.navigation > li >a:focus {
+  color:#2196F3
+}
 .mail {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -127,6 +130,15 @@ ul {
 .mail:hover {
   color: #2196F3;
 }
+.mail:focus {
+  color: #2196F3;
+}
+.mail:hover .mail_icon {
+  fill: #2196F3;
+}
+.mail:focus .mail_icon {
+  fill: #2196F3;
+}
 .tel {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -138,10 +150,19 @@ ul {
 .tel:hover {
   color: #2196F3;
 }
+.tel:hover .tel_icon {
+  fill: #2196F3;
+}
+.tel:focus {
+  color: #2196F3;
+}
+.tel:focus .tel_icon {
+  fill: #2196F3;
+}
 /* Main */
 .container {
   background-image:linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url('../images/backgraund-image.jpg');
-  background-size: contain;
+  background-size: cover;
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,6 +194,7 @@ ul {
     border-radius: 4px;
     margin: 30px auto 0;
     text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   .container-portf {
     width: 1200px;
@@ -207,6 +229,7 @@ ul {
     border-radius: 4px;
     padding: 6px 22px;
     margin-left: 294px
+    
 
   }
   .button_chapters-s {
@@ -252,6 +275,7 @@ ul {
   .container-portf button:hover {
     background: #2196F3;
     color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   .section {
     padding-top: 94px;
@@ -280,7 +304,7 @@ ul {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
   }
@@ -408,6 +432,9 @@ ul {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
   }
+  .name_port li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
   .name_port li:nth-child(-n +3) {
     margin-top: 0;
   }
@@ -426,7 +453,7 @@ ul {
     box-align: left;
   }
   .about_ {
-    padding: 30px 0;
+    padding-top: 30px;
   }
   .profession {
     font-family: 'Roboto', sans-serif;
@@ -534,10 +561,15 @@ ul {
   background-size: contain;
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
 }
 .title_size {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
   background-color: #F5F4FA;
+  height: 120px;
   margin-bottom: 30px;
 }
 .social_links {
@@ -567,8 +599,42 @@ ul {
 .social-insta:hover {
   fill:#FFFFFF;
 }
+.social-insta:focus {
+  fill:#FFFFFF;
+}
 .ellipse:hover {
   background-color: #2196F3;
+}
+.ellipse:focus {
+  background-color: #2196F3;
+}
+.ellipse:hover .social-twitter {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}
+.ellipse:hover .social-facebook {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}.ellipse:hover .social-linkedin {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}.ellipse:hover .social-insta {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}
+.ellipse:focus .social-twitter {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}
+.ellipse:focus .social-facebook {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}.ellipse:focus .social-linkedin {
+  background-color: #2196F3;
+  fill:#FFFFFF;
+}.ellipse:focus .social-insta {
+  background-color: #2196F3;
+  fill:#FFFFFF;
 }
 .social-twitter {
   fill:#AFB1B8;
@@ -601,17 +667,37 @@ ul {
   margin-top: 50px;
 }
 .client {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
+.client:hover {
+  border-color: #2196F3;
+}
+.client:focus {
+  border-color: #2196F3;
+}
+.client:hover .client_icon {
+  fill:#2196F3;
+}
+.client:focus .client_icon {
+  fill:#2196F3;
+}
 .client_icon {
   width: 106px;
   height: 60px;
-  margin: 16px 32px;
   fill:#AFB1B8;
+}
+.client_icon:hover {
+  fill:#2196F3;
+}
+.client_icon:focus {
+  fill:#2196F3;
 }
 .title-footer {
   color: #FFFFFF;
@@ -644,6 +730,9 @@ ul {
   margin-right: 10px;
 }
 .ellipse-footer:hover {
+  background-color: #2196F3;
+}
+.ellipse-footer:focus {
   background-color: #2196F3;
 }
 .social-insta-footer {
