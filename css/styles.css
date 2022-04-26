@@ -308,6 +308,14 @@ ul {
     line-height: 2.0;
     letter-spacing: 0.06em;
   }
+  .title-second_stud {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+  }
   .title-first {
     font-family: 'Roboto';
     font-style: normal;
